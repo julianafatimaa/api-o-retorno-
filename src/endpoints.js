@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { diasemana, fatorial, semaforo } from './services.js';
+import { diasemana, fatorial, semaforo, sequenciaPar } from './services.js';
 const server = Router();
 
 
