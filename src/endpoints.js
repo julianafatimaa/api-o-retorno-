@@ -51,6 +51,24 @@ server.post('/fatorial', (req, resp) => {
     }
 })
 
+server.post('/sequenciaPAR', (req, resp) => {
+    try{
+        const { numero } = req.body;
+        const parr = sequenciaPar (numero);
+
+        resp.send ({
+            parr : parr
+        })
+    }
+    catch(err){
+        resp.send({
+            erro : err.message
+        })
+    }
+})
+
+
+
 
 export default server;
 
