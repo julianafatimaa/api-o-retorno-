@@ -49,3 +49,11 @@ export function fatorial( numero ) {
     }
     return c;
 }
+
+export function sequenciaPar(numero){
+    for(contador = 0; contador <= numero; contador +=2)
+    {
+        console.log(contador);
+    }
+    sequenciaPar(8);
+}
